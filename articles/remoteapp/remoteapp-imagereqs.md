@@ -39,6 +39,7 @@ The requirements for the image that can be uploaded for use with Azure RemoteApp
 - The Remote Desktop Session Host (RDSH) role and the Desktop Experience feature must be installed.
 - The Remote Desktop Connection Broker role must *not* be installed.
 - The Encrypting File System (EFS) must be disabled.
+- The image must NOT contain an unattend file ( **%SYSTEMDRIVE%\Windows\Panther\unattend.xml** ). Feel free to rename it to unattend.old for safe keeping.
 - The image must be SYSPREPed using the parameters **/oobe /generalize /shutdown** (DO NOT use the **/mode:vm** parameter).
 - Uploading your VHD from a snapshot chain is not supported.
  
