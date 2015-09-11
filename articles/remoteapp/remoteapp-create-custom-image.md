@@ -110,7 +110,7 @@ The detailed steps for creating a new image are:
 
 
 	- Install the RDSH role before installing applications to ensure that any issues with application compatibility are discovered before the image is uploaded to RemoteApp.
-	- Make sure your application appears in the **Start** menu. Also ensure that the icon you see in the **Start** menu is what you want users to see. If not, change it. (You do not *have* to add the application to the Start menu, but it makes it much easier to publish the application in RemoteApp. Otherwise, you have to provide the installation path for the application when you publish the app.)
+	- Make sure a shortcut to your application (**.lnk** file) appears in the **Start** menu for all users (**%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs**). Also ensure that the icon you see in the **Start** menu is what you want users to see. If not, change it. (You do not *have* to add the application to the Start menu, but it makes it much easier to publish the application in RemoteApp. Otherwise, you have to provide the installation path for the application when you publish the app.)
 
 8.	Perform any additional Windows configurations required by your applications.
 9.	Disable the Encrypting File System (EFS). Run the following command at an elevated command window:
